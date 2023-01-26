@@ -2,7 +2,7 @@
 
 Also called reader-writer pattern
 
-![Screenshot 2023-01-26 at 2.02.28 PM.png](..%2F..%2F..%2F..%2F..%2F..%2FLibrary%2FGroup%20Containers%2Fgroup.com.apple.notes%2FAccounts%2F0493690A-A46E-4E5C-942E-B7414B1D9BB8%2FMedia%2F6E717EDE-A61D-4940-A9C3-46D864708D5A%2FScreenshot%202023-01-26%20at%202.02.28%20PM.png)
+![](/Users/yousseffekry/Downloads/Screenshot 2023-01-26 at 2.02.28 PM.png))
 ￼
 It is a very common way to queue shared data among resources. It allows data to be added in a streaming or batch fashion. The idea is simple, producers can put data to be consumed by the users.
 
