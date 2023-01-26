@@ -1,9 +1,6 @@
 # Producer- Consumer
-
 Also called reader-writer pattern
 
-![](/Users/yousseffekry/Downloads/Screenshot 2023-01-26 at 2.02.28 PM.png))
-￼
 It is a very common way to queue shared data among resources. It allows data to be added in a streaming or batch fashion. The idea is simple, producers can put data to be consumed by the users.
 
 Problem:  if data produced are more than the capacity of the queue then , there exist some methods to handle the data. For example:
