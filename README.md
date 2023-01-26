@@ -1,0 +1,17 @@
+# Producer- Consumer
+
+Also called reader-writer pattern
+
+![Screenshot 2023-01-26 at 2.02.28 PM.png](..%2F..%2F..%2F..%2F..%2F..%2FLibrary%2FGroup%20Containers%2Fgroup.com.apple.notes%2FAccounts%2F0493690A-A46E-4E5C-942E-B7414B1D9BB8%2FMedia%2F6E717EDE-A61D-4940-A9C3-46D864708D5A%2FScreenshot%202023-01-26%20at%202.02.28%20PM.png)
+￼
+It is a very common way to queue shared data among resources. It allows data to be added in a streaming or batch fashion. The idea is simple, producers can put data to be consumed by the users.
+
+Problem:  if data produced are more than the capacity of the queue then , there exist some methods to handle the data. For example:
+* if the newest data is the most valuable then, the queue will drop the oldest data.
+* if only samples of data are needed then, the data is dropped randomly.
+* If all data are valuable then we can wait until there is a place to hold it. That can lead to slower data sharing but, efficient.
+
+A race condition can occur if the pointer in the queue is moved and the consumer started reading before the producer post the data. That can lead to consumer reading null or garbage data before it is filled with the producer.
+
+
+execute ```make clean build run```, which will clean, build, and then execute this solution.
